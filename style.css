@@ -11,6 +11,7 @@
     --fundo_cinza: #e7e7e7;
     --fundo_preto: #001400;
     --nav_hover: #e71d67;
+    --home-textao-p: 40px;
 }
 
 .backg{
@@ -24,6 +25,7 @@
     height: 100vh;
     width: 100%;
     border: solid 1px black;
+    grid-template-rows: 100px auto;
 }
 
 .container .div{
@@ -101,4 +103,41 @@ nav .nav-direita{
 
 .wallet:hover{
     background-color: #e7e7e7
+}
+
+/* HOME */
+
+.home{
+    display: grid;
+    color: white;
+    grid-template-columns: 65%;
+    grid-template-rows: 35% 15% 15%;
+    align-items: center;
+}
+
+.home .home-textao{
+    align-self: end;
+}
+
+.home-textao h1{
+    font-weight: bolder;
+    font-size: 62px;
+}
+
+.home-textao p{
+    margin-top: var(--home-textao-p);
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.home-textao span{
+    color: var(--nav_hover);
+}
+
+.home-botao span:last-child{
+    margin-left: 30px;
+}
+
+.home-botao span{
+    background-color: white;
 }
