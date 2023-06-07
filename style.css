@@ -12,24 +12,28 @@
     --fundo_preto: #001400;
     --nav_hover: #e71d67;
     --home-textao-p: 40px;
+    --fundo-marinho: #030129;
 }
 
-.backg{
+/* Backgrounds */
+
+.backg-inicial{
     background: linear-gradient(300deg, #FF006C, rgba(255, 251, 0, 0) 70.71%),
     radial-gradient(closest-corner at 18% 35%, #0180A1 0%, #05173F 100%);
 
 }
 
+.backg-wallet{
+    background: radial-gradient(closest-corner at 18% 35%, #0180A1 0%, #05173F 100%);
+}
+
+/**/
+
 .container{
     display: grid;
     height: 100vh;
     width: 100%;
-    border: solid 1px black;
     grid-template-rows: 100px auto;
-}
-
-.container .div{
-    border: solid 1px black;
 }
 
 nav{
@@ -111,7 +115,7 @@ nav .nav-direita{
     display: grid;
     color: white;
     grid-template-columns: 65%;
-    grid-template-rows: 35% 15% 15%;
+    grid-template-rows: 40% 15% 15%;
     align-items: center;
 }
 
@@ -136,8 +140,37 @@ nav .nav-direita{
 
 .home-botao span:last-child{
     margin-left: 30px;
+    padding: 10px 60px;
 }
 
 .home-botao span{
+    color: rgb(234, 29, 241);
     background-color: white;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.home-botao span:hover{
+    background-color: var(--fundo_cinza);
+}
+
+.home-numeros{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.home-numeros p span{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.backg-wallet .container{
+    height: 200vh;
 }
