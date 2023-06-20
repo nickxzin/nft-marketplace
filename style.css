@@ -183,6 +183,10 @@ nav .nav-direita{
     height: 200vh;
 }
 
+.set-wallet{
+    margin-top: 8rem;
+}
+
 .set-wallet-tx h1{
     font-weight: 600;
     font-size: 2rem;
@@ -203,12 +207,15 @@ nav .nav-direita{
     justify-content: space-between;
     gap: 20px;
     height: 220px;
+    margin-top: 1rem;
 }
 
 .op-1 p, .op-2 p, .op-3 p, .op-4 p{
     display: flex;
     margin: 0px;
     font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .op-1, .op-2, .op-3, .op-4{
@@ -221,11 +228,32 @@ nav .nav-direita{
     justify-content: center;
     border-radius: 15px;
     border: 1px solid var(--nav_hover);
+    transition: 0.5s;
 }
 
+.op-1:hover, .op-2:hover, .op-3:hover, .op-4:hover{
+    border: 0px solid transparent;
+    box-shadow: 0px 0px 30px var(--nav_hover);
+}
 
 
 .op-1 img, .op-2 img, .op-3 img, .op-4 img {
     width: 6vw;
 
+}
+
+.live-auctions{
+    margin-top: 10rem;
+    flex-direction: column;
+}
+
+.live-auctions-pictures{
+    display: flex;
+    height: 400px;
+    gap: 50px;
+}
+
+.live-auctions-pictures div{
+    flex-grow: 1;
+    background: linear-gradient(180deg, var(--nav_hover), var(--fundo-marinho) 90%);
 }
